@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 #nav{
     background-color: aliceblue;
     display: flex;
@@ -37,7 +41,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 70px;
+    padding: 50px 70px;
 }
 
 #hero img{
@@ -61,6 +65,10 @@ a{
     margin-top: 20px auto 20px;
 }
 
+.easybank{
+    width: 50%;
+}
+
 
 .easybank h1 {
     font-size: 50px;
@@ -71,9 +79,7 @@ a{
 
 .easybank p {
     padding-bottom: 20px;
-    line-height: 30px;
-    width: 50%;
-   
+    line-height: 24px;
 }
 
 .icon{
@@ -89,7 +95,9 @@ margin: 10px auto 20px;
 } 
 
 .icon p {
-    line-height: 30px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 100;
 }
 .img {
     width: 100%;
@@ -113,18 +121,23 @@ margin: 10px auto 20px;
 
 .blogs div{
     box-shadow: 5px 5px 10px rgb(207, 207, 207);
+    padding-bottom: 20px;
 }
 
-h6 {
-    font-size: i6px;
+.blogs h6 {
+    font-size: 12px;
     font-weight: 100;
     margin: 10px;
 }
 
-h3{
+.blogs h3{
     font-size: 16px;
     font-weight: 100;
-    margin: 10px;
+    margin: 10px 10px 0;
+}
+
+.blogs h3:hover{
+    color: green;
 }
 
 .last-section {
@@ -135,6 +148,7 @@ h3{
     background-color: hsl(233, 26%, 24%);
     color: #fff;
     padding: 30px 50px;
+    margin-top: 50px;
 
 }
 .about-us {
@@ -170,4 +184,148 @@ h3{
 }
 .logo i{
     font-size: 20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px)  {
+    #hero{
+        padding: 30px;
+    }
+
+    #hero div{
+        width: 50%;
+    }
+
+    #hero div h1{
+       font-size: 40px;
+    }
+
+    #main-section{
+        padding: 100px 30px;
+    }
+    #article {
+        padding: 30px 50px;
+    }
+
+   }
+
+   
+   @media only screen and (max-width: 768px)  {
+    #hero div h1{
+        font-size: 32px;
+    }
+
+    .icon, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last-section{
+        padding: 30px 20px;
+    }
+
+    .last-section .request-btn{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .about-us{
+        gap: 65px;
+    }
+
+    .easybank{
+        width: 80%;
+    }
+
+}
+
+   @media only screen and (max-width: 576px)  {
+
+    .last-section{
+        flex-direction: column;
+    }
+    #article {
+        padding: 30px 30px;
+        
+    }
+    #hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    #hero img{
+        width: 70%;
+    }
+    #hero div h1{
+        font-size: 30px;
+    }
+    #hero div{
+        width: 80%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+   
+    .easybank h1{
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .easybank p {
+        font-size: 12px;
+        width: 100%;
+    }
+   
+}
+
+
+
+
+
+@media only screen and (max-width: 480px)  {
+    #hero div h1 {
+        font-size: 20px;
+    }
+
+    #hero div p {
+        line-height: 22px;
+        font-size: 12px;
+    }
+
+    .easybank{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #main-section {
+        padding: 20px 30px;
+    }
+
+    .icon, .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .icon{
+        text-align: center;
+    }
+
+    .blogs div{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 375px)  {
+    .blogs div{
+        width: 80%;
+    }
+    
+    .about-us{
+        flex-direction: column;
+        text-align: center;
+    }
 }
