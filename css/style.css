@@ -11,6 +11,7 @@ a{
 
 html,body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 #nav{
@@ -32,7 +33,7 @@ html,body{
 }
 
 .request-btn{
-    background-color: rgb(43, 199, 147);
+    background:linear-gradient(to right, rgb(43, 199, 147), rgb(0, 195, 255));
     color: #fff;
     padding: 10px 20px;
     border-radius: 50px;
@@ -177,17 +178,34 @@ margin: 10px auto 20px;
   padding-top:  30px;
   font-size: 12px;
 }
+
 .logo {
    display: flex;
    gap: 10px;
    padding-top: 20px;
 }
-.logo i{
+
+.logo a{
+    color: #fff;
     font-size: 20px;
 }
 
 
-
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(43, 199, 147); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 7px 7px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 22px; /* Increase font size */
+  }
 
 
 @media only screen and (max-width: 992px)  {
@@ -279,6 +297,7 @@ margin: 10px auto 20px;
     }
    
 }
+
 
 
 
